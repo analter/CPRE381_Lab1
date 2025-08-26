@@ -125,6 +125,30 @@ begin
 
     -- TODO: add test cases as needed (at least 3 more for this lab)
 
+	--my TESTS
+--TEST1
+	--Add 2 to 6, the respective numbers will be in hexadecimal 
+		s_iX <= x"06";
+		s_iW <= x"01"; --this will need to be 1 due to the multiplication that occurs
+		s_iLdW <= x"00";
+		s_iY <= x"02";
+	--expected output o_Y to be 8 or x08
+  	
+--TEST2
+	--Multiply 1 and 3, the respective numbers will be in hexadecimal 
+		s_iX <= x"01";
+		s_iW <= x"03";
+		s_iLdW <= x"00";
+		s_iY <= x"00";
+	--expected output o_Y to be 3 or x03
+	
+--TEST3
+	--Multiply 9 and 5 then add 1, the respective numbers will be in hexadecimal 
+		s_iX <= x"09";
+		s_iW <= x"05";
+		s_iLdW <= x"00";
+		s_iY <= x"01";
+	--expected output o_Y to be 46 or x2E
 
     wait;
   end process;
