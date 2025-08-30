@@ -8,3 +8,11 @@ entity mux2t1_N is
     o_O    :out std_logic_vector(15 downto 0);
 );
 end mux2t1_N;
+component mux2t1 is
+  ports(
+    i_D0    :in std_logic;
+    i_D1    :in std_logic;
+    i_S    :in std_logic;
+    o_O    :out std_logic;
+);
+end component;
