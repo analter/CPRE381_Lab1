@@ -1,2 +1,10 @@
 library IEEE;
 use IEEE.std.logic_1164.all;
+entity mux2t1 is
+  ports(
+    i_D0    :in std_logic;
+    i_D1    :in std_logic;
+    i_S    :in std_logic;
+    o_O    :out std_logic;
+);
+end mux2t1;
